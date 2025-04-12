@@ -634,7 +634,6 @@ func computeDistances(bbox rVectorBBox, x, y float64) (mind, maxd float64) {
 			mind = minx + miny
 		}*/
 }
-func vectorComputeDistances(bbox rVectorBBox, x, y float64) (mind, maxd float64)
 
 func minInt(a, b int) int {
 	if a < b {
