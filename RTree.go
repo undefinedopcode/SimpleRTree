@@ -300,8 +300,8 @@ func (r *SimpleRTree) load(points FlatPoints, isSorted bool) *SimpleRTree {
 	if points.Len() == 0 {
 		return r
 	}
-	if points.Len() >= math.MaxUint32 / int(node_size) {
-		log.Fatal("Exceded maximum possible size", math.MaxUint32 / int(node_size))
+	if points.Len() >= math.MaxInt32 / int(node_size) {
+		log.Fatal("Exceded maximum possible size", math.MaxInt32 / int(node_size))
 	}
 	if r.options.MAX_ENTRIES == 0 {
 		panic("MAX entries was 0")
